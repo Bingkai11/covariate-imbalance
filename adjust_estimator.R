@@ -3,7 +3,7 @@ adjust_estimator <- function(y, a, w, delta = NULL, method = "unadjust"){
   # categorial datatype;
   # a is the treatment arm, and must be a binary vector;
   # w is the baseline varible matrix or dataframe.
-  # method == DR-WLS means we deal with missing data while using DR-WLS.
+  # method == DR-WLS-U means we deal with missing data while using DR-WLS.
   # delta is the indicator vector of missing outcomes.
   
   if(!is.data.frame(w)){
